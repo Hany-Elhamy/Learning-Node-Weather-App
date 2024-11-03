@@ -10,7 +10,7 @@ const forecast=(address,callback)=>{
             callback("wrong location",undefined)
         }
         else{
-            callback(undefined,"it's currently "+body.current.temp_c+" degrees in "+address+" and There is a "+body.current.precip_mm+" chance of rain."+body.forecast.forecastday[0].astro.moon_phase)
+            callback(undefined,"it's currently "+body.current.temp_c+" degrees. and There is a "+body.current.precip_mm+" chance of rain."+body.forecast.forecastday[0].astro.moon_phase)
         }
     })
 }
